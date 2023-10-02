@@ -1,0 +1,19 @@
+<div class="cube">
+    <img class="cube" src="{{imageUrl}}">
+    {{#if name}}
+    <p class="name">Name :{{name}}</p>
+    {{else}}
+    <p class="name">Name: Xcutter</p>
+    {{/if}}
+    {{#if diffucultyLevel}}
+    <p><span>Dificulty level</span>{{diffucultyLevel}}</p>
+    {{else}}
+    <p><span>Dificulty level</span>356</p>
+    {{/if}}
+    {{#if id }}
+    <a class="btn" href="/cubes/{{id}}/details">Details</a>
+    {{else}}
+
+    <a class="btn" href="/cubes/1/details">Details for cube</a>
+    {{/if}}
+</div>

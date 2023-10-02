@@ -1,7 +1,7 @@
 const router = require('express').Router()
 
-router.get('/all', (req, res) => {
+router.get('/template', (req, res) => {
     //cubes/
-    res.send(' hello from all cubes dude ')
+    res.render('partials/cubeTemplate')
 })
 module.exports = router 
