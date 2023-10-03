@@ -1,10 +1,12 @@
 const mongoose = require("mongoose")
 const mongooseSchema = new mongoose.Schema(
-{
-    name:String,
-    imageUrl:String,
-    difficultyLevel:String,
-    description:String
-}
+    {
+        name: String,
+        imageUrl: String,
+        description: String,
+        difficultyLevel: Number
+
+
+    }
 )
-module.exports = Cube = mongoose.model('cube',mongooseSchema)
+module.exports = Cube = mongoose.model('cube', mongooseSchema)
